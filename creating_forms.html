@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+<body>
+    <h1>Student Registration</h1>
+    <form action="/register" method="post">  <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+        </div>
+        <div>
+            <label for="gender">Gender:</label>
+            <br>
+            <input type="radio" id="male" name="gender" value="MALE" required>
+            <label for="male">Male</label>
+            <br>
+            <input type="radio" id="female" name="gender" value="FEMALE" required>
+            <label for="female">Female</label>
+            <br>
+            <input type="radio" id="other" name="gender" value="OTHER" required>
+            <label for="other">Other</label>
+        </div>
+        <div>
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" required></textarea>
+        </div>
+        <div>
+            <label for="telephone">Telephone:</label>
+            <input type="tel" id="telephone" name="telephone" required>
+        </div>
+        <div>
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="course">Course:</label>
+            <br>
+            <select id="course" name="course" required>
+                <option value="">Select Course</option>
+                <option value="ENGINEERING">Engineering</option>
+                <option value="HEALTH_SCIENCE">Health Science</option>
+                <option value="MUSIC">Music</option>
+                <option value="OTHER">Other</option>
+            </select>
+        </div>
+        <br>
+        <button type="submit">Register</button>
+        <button type="reset">Cancel</button>
+    </form>
+</body>
+</html>
